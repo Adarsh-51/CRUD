@@ -4,7 +4,9 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "start": "nodemon index.js"
+    "start": "nodemon index.js",
+    "predeploy" : "npm run build",
+    "deploy" : "gh-pages -d build"
   },
   "author": "",
   "license": "ISC",
@@ -15,6 +17,7 @@
     "mongoose": "^5.13.1"
   },
   "devDependencies": {
+    "gh-pages": "^4.0.0",
     "nodemon": "^2.0.9"
   }
 }
